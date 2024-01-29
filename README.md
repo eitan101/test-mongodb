@@ -10,3 +10,9 @@ cd test-mongodb
 docker compose up --wait
 docker compose exec -it  mongo1 mongosh --eval "rs.status()"
 ```
+
+The connection string is:
+
+```
+mongodb://127.0.0.1:27017,127.0.0.1:27018,127.0.0.1:27019/?replicaSet=rs0
+```
